@@ -1,0 +1,30 @@
+# Python
+.venv/
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+*Zone.Identifier
+
+# Raw FESSTVaL data (download separately, see README section 6)
+real_data/
+
+# Regenerable synthetic datasets (python -m windlidar.gustnet.dataset)
+data/*.csv
+!data/rans_sweep.csv
+
+# OpenFOAM runs: keep only the light result files and solver logs
+outputs/**/*
+!outputs/**/
+!outputs/**/metrics.json
+!outputs/**/profile.csv
+!outputs/**/case_params.json
+!outputs/**/gci.json
+!outputs/**/log.*
+
+# Local archives and scratch plots
+*.tgz
+results/fesstval/real_analysis_*.png

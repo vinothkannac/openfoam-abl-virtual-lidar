@@ -1,0 +1,4 @@
+#!/bin/bash
+# Remove all generated OpenFOAM output (the template dictionaries in system/ and constant/ are kept).
+cd "${0%/*}/.." || exit 1
+rm -rf outputs/abl_single outputs/mesh_study outputs/sweep outputs/validation

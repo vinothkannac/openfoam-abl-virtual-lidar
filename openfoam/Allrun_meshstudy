@@ -1,0 +1,14 @@
+#!/bin/bash
+# Three-mesh study (nz = 40 / 80 / 160) with GCI (output: ../outputs/mesh_study). A few minutes on a laptop CPU.
+cd "${0%/*}" || exit 1
+ROOT="$(cd .. && pwd)"; export PYTHONPATH="$ROOT/src:$PYTHONPATH"
+USTAR=${USTAR:-0.5}; Z0=${Z0:-0.05}
+if command -v simpleFoam >/dev/null; then SOLVER="simpleFoam"; else SOLVER="foamRun -solver incompressibleFluid"; fi
+for NZ in 40 80 160; do
+  D="$ROOT/outputs/mesh_study/nz$NZ"; rm -rf "$D"; mkdir -p "$D"; cp -r system constant "$D/"
+  python3 -m windlidar.cfd.case_builder --case "$D" --ustar "$USTAR" --z0 "$Z0" --nz $NZ || exit 1
+  ( cd "$D" && blockMesh > log.blockMesh 2>&1 && $SOLVER > log.solver 2>&1 && python3 -m windlidar.cfd.postprocess --case . > log.post 2>&1 ) \
+     || { echo "run nz=$NZ failed, see $D/log.*"; exit 1; }
+  echo "nz=$NZ done"
+done
+python3 -m windlidar.cfd.mesh_study --runs "$ROOT/outputs/mesh_study"

@@ -1,0 +1,25 @@
+{
+ "assumptions": {
+  "u_abs": {
+   "U_lidar": 0.1,
+   "GF_lidar": 0.0
+  },
+  "u_rel": {
+   "U_lidar": 0.01,
+   "GF_lidar": 0.01
+  },
+  "model_residual_std": 0.03525995835661888
+ },
+ "test": {
+  "coverage_95": 0.9311163895486936,
+  "mean_halfwidth": 0.07387154549360275,
+  "mean_u_mc": 0.013235600665211678,
+  "n": 421
+ },
+ "unseen": {
+  "coverage_95": 0.9172240802675585,
+  "mean_halfwidth": 0.07372041791677475,
+  "mean_u_mc": 0.013016190379858017,
+  "n": 1196
+ }
+}

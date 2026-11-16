@@ -1,0 +1,12 @@
+#!/bin/bash
+# Optional: RANS runs for a (u*, z0) grid -> ../data/rans_sweep.csv (U, k, epsilon at 90 m).
+# 4 x 4 = 16 runs, each ~1-3 min on a laptop CPU (output: ../outputs/sweep).
+cd "${0%/*}" || exit 1
+ROOT="$(cd .. && pwd)"; export PYTHONPATH="$ROOT/src:$PYTHONPATH"
+if command -v simpleFoam >/dev/null; then SOLVER="simpleFoam"; else SOLVER="foamRun -solver incompressibleFluid"; fi
+for US in 0.3 0.45 0.6 0.75; do for Z0 in 0.01 0.03 0.1 0.2; do
+  D="$ROOT/outputs/sweep/us${US}_z0${Z0}"; rm -rf "$D"; mkdir -p "$D"; cp -r system constant "$D/"
+  python3 -m windlidar.cfd.case_builder --case "$D" --ustar $US --z0 $Z0 --nz 80 || continue
+  ( cd "$D" && blockMesh > log.blockMesh 2>&1 && $SOLVER > log.solver 2>&1 && python3 -m windlidar.cfd.postprocess --case . > log.post 2>&1 ) || echo "failed: $D"
+done; done
+python3 -m windlidar.cfd.collect_sweep "$ROOT/outputs/sweep" "$ROOT/data/rans_sweep.csv"

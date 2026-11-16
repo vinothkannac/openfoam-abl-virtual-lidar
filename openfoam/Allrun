@@ -1,0 +1,15 @@
+#!/bin/bash
+# Single RANS run of the neutral ABL (output: ../outputs/abl_single).
+#   ./Allrun                      defaults u*=0.5 m/s, z0=0.05 m, nz=80
+#   USTAR=0.6 Z0=0.1 NZ=120 ./Allrun
+cd "${0%/*}" || exit 1
+ROOT="$(cd .. && pwd)"; export PYTHONPATH="$ROOT/src:$PYTHONPATH"
+USTAR=${USTAR:-0.5}; Z0=${Z0:-0.05}; NZ=${NZ:-80}
+D="$ROOT/outputs/abl_single"; rm -rf "$D"; mkdir -p "$D"; cp -r system constant "$D/"
+python3 -m windlidar.cfd.case_builder --case "$D" --ustar "$USTAR" --z0 "$Z0" --nz "$NZ" || exit 1
+cd "$D" || exit 1
+blockMesh > log.blockMesh 2>&1 || { echo "blockMesh failed, see log.blockMesh"; exit 1; }
+checkMesh > log.checkMesh 2>&1
+if command -v simpleFoam >/dev/null; then SOLVER="simpleFoam"; else SOLVER="foamRun -solver incompressibleFluid"; fi
+$SOLVER > log.solver 2>&1 || { echo "solver failed:"; tail -30 log.solver; exit 1; }
+python3 -m windlidar.cfd.postprocess --case .

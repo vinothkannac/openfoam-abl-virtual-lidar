@@ -1,0 +1,11 @@
+{
+ "closure": {
+  "rans_sigma_over_ustar": 1.8832018110324955,
+  "observed_neutral_sigma_over_ustar": 2.2894284851066637,
+  "mean_correction_factor": 1.2157124070873173,
+  "k_over_expected_min_max": [
+   1.0027271077575768,
+   1.0089906245443616
+  ]
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "n_sonic": 9238,
+ "n_lidar": 9430,
+ "EOG_IIB": {
+  "frac_10min_records_with_gust_excess_above_EOG_rise": 0.4495561809915566,
+  "median_EOG_Vgust": 3.503291879365385,
+  "median_EOG_3s_rise": 1.7906968183052885,
+  "median_measured_gust_excess": 1.6185342,
+  "p99_measured_gust_excess": 4.922766399999998
+ },
+ "EOG_IIIC": {
+  "frac_10min_records_with_gust_excess_above_EOG_rise": 0.5362632604459839,
+  "median_EOG_Vgust": 3.002821610884615,
+  "median_EOG_3s_rise": 1.5348829871188183,
+  "median_measured_gust_excess": 1.6185342,
+  "p99_measured_gust_excess": 4.922766399999998
+ },
+ "EOG_IA": {
+  "frac_10min_records_with_gust_excess_above_EOG_rise": 0.3621996103052609,
+  "median_EOG_Vgust": 4.003762147846153,
+  "median_EOG_3s_rise": 2.0465106494917586,
+  "median_measured_gust_excess": 1.6185342,
+  "p99_measured_gust_excess": 4.922766399999998
+ },
+ "NTM_table": [
+  {
+   "b": "(4, 6]",
+   "U": 5.015,
+   "n": 4077,
+   "raw_p90": 0.766,
+   "corr_p90": 1.021,
+   "corr_mean": 0.539,
+   "NTM_A": 1.498,
+   "NTM_B": 1.311,
+   "NTM_C": 1.123
+  },
+  {
+   "b": "(6, 8]",
+   "U": 6.892,
+   "n": 3012,
+   "raw_p90": 0.797,
+   "corr_p90": 1.062,
+   "corr_mean": 0.608,
+   "NTM_A": 1.723,
+   "NTM_B": 1.508,
+   "NTM_C": 1.292
+  },
+  {
+   "b": "(8, 10]",
+   "U": 8.766,
+   "n": 740,
+   "raw_p90": 0.881,
+   "corr_p90": 1.175,
+   "corr_mean": 0.882,
+   "NTM_A": 1.948,
+   "NTM_B": 1.704,
+   "NTM_C": 1.461
+  },
+  {
+   "b": "(10, 12]",
+   "U": 10.789,
+   "n": 190,
+   "raw_p90": 0.974,
+   "corr_p90": 1.299,
+   "corr_mean": 1.155,
+   "NTM_A": 2.191,
+   "NTM_B": 1.917,
+   "NTM_C": 1.643
+  },
+  {
+   "b": "(12, 16]",
+   "U": 12.667,
+   "n": 48,
+   "raw_p90": 0.99,
+   "corr_p90": 1.32,
+   "corr_mean": 1.18,
+   "NTM_A": 2.416,
+   "NTM_B": 2.114,
+   "NTM_C": 1.812
+  }
+ ],
+ "variance_ratio_used": 0.5627797474945083,
+ "lowest_NTM_class_covering_corrected_p90_sigma": "C"
+}

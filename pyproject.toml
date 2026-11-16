@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "windlidar"
+version = "0.1.0"
+description = "Doppler-lidar signal processing, stochastic wind-field generation and design wind conditions, linked to an OpenFOAM RANS atmospheric-boundary-layer model and validated on FESSTVaL 2021 measurements."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["numpy", "scipy", "pandas", "matplotlib", "torch", "scikit-learn", "xarray", "netCDF4", "imageio-ffmpeg"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

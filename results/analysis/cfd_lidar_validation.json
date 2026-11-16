@@ -1,0 +1,257 @@
+{
+ "validation": {
+  "loglaw_misfit_by_hour": [
+   {
+    "hour": 0,
+    "n": 412,
+    "rms": 0.119,
+    "U90": 6.084,
+    "z0_median": 10.209,
+    "ustar_median": 1.129,
+    "rms_rel_pct": 1.958
+   },
+   {
+    "hour": 1,
+    "n": 398,
+    "rms": 0.107,
+    "U90": 6.018,
+    "z0_median": 10.611,
+    "ustar_median": 1.088,
+    "rms_rel_pct": 1.779
+   },
+   {
+    "hour": 2,
+    "n": 386,
+    "rms": 0.113,
+    "U90": 5.998,
+    "z0_median": 12.15,
+    "ustar_median": 1.172,
+    "rms_rel_pct": 1.886
+   },
+   {
+    "hour": 3,
+    "n": 395,
+    "rms": 0.117,
+    "U90": 5.915,
+    "z0_median": 11.184,
+    "ustar_median": 1.114,
+    "rms_rel_pct": 1.974
+   },
+   {
+    "hour": 4,
+    "n": 361,
+    "rms": 0.108,
+    "U90": 5.831,
+    "z0_median": 10.934,
+    "ustar_median": 1.112,
+    "rms_rel_pct": 1.854
+   },
+   {
+    "hour": 5,
+    "n": 295,
+    "rms": 0.109,
+    "U90": 5.745,
+    "z0_median": 7.412,
+    "ustar_median": 0.92,
+    "rms_rel_pct": 1.89
+   },
+   {
+    "hour": 6,
+    "n": 218,
+    "rms": 0.059,
+    "U90": 5.645,
+    "z0_median": 1.482,
+    "ustar_median": 0.56,
+    "rms_rel_pct": 1.044
+   },
+   {
+    "hour": 7,
+    "n": 231,
+    "rms": 0.037,
+    "U90": 6.083,
+    "z0_median": 0.062,
+    "ustar_median": 0.304,
+    "rms_rel_pct": 0.605
+   },
+   {
+    "hour": 8,
+    "n": 258,
+    "rms": 0.032,
+    "U90": 6.12,
+    "z0_median": 0.021,
+    "ustar_median": 0.258,
+    "rms_rel_pct": 0.53
+   },
+   {
+    "hour": 9,
+    "n": 275,
+    "rms": 0.033,
+    "U90": 6.298,
+    "z0_median": 0.012,
+    "ustar_median": 0.261,
+    "rms_rel_pct": 0.525
+   },
+   {
+    "hour": 10,
+    "n": 281,
+    "rms": 0.031,
+    "U90": 6.238,
+    "z0_median": 0.018,
+    "ustar_median": 0.28,
+    "rms_rel_pct": 0.494
+   },
+   {
+    "hour": 11,
+    "n": 290,
+    "rms": 0.034,
+    "U90": 6.187,
+    "z0_median": 0.006,
+    "ustar_median": 0.255,
+    "rms_rel_pct": 0.544
+   },
+   {
+    "hour": 12,
+    "n": 288,
+    "rms": 0.031,
+    "U90": 6.11,
+    "z0_median": 0.005,
+    "ustar_median": 0.253,
+    "rms_rel_pct": 0.512
+   },
+   {
+    "hour": 13,
+    "n": 299,
+    "rms": 0.036,
+    "U90": 6.046,
+    "z0_median": 0.011,
+    "ustar_median": 0.271,
+    "rms_rel_pct": 0.59
+   },
+   {
+    "hour": 14,
+    "n": 322,
+    "rms": 0.036,
+    "U90": 5.986,
+    "z0_median": 0.014,
+    "ustar_median": 0.284,
+    "rms_rel_pct": 0.604
+   },
+   {
+    "hour": 15,
+    "n": 302,
+    "rms": 0.03,
+    "U90": 5.899,
+    "z0_median": 0.009,
+    "ustar_median": 0.263,
+    "rms_rel_pct": 0.508
+   },
+   {
+    "hour": 16,
+    "n": 303,
+    "rms": 0.033,
+    "U90": 5.769,
+    "z0_median": 0.057,
+    "ustar_median": 0.331,
+    "rms_rel_pct": 0.573
+   },
+   {
+    "hour": 17,
+    "n": 284,
+    "rms": 0.035,
+    "U90": 5.628,
+    "z0_median": 0.396,
+    "ustar_median": 0.421,
+    "rms_rel_pct": 0.613
+   },
+   {
+    "hour": 18,
+    "n": 279,
+    "rms": 0.046,
+    "U90": 5.37,
+    "z0_median": 2.006,
+    "ustar_median": 0.621,
+    "rms_rel_pct": 0.862
+   },
+   {
+    "hour": 19,
+    "n": 320,
+    "rms": 0.064,
+    "U90": 5.513,
+    "z0_median": 4.01,
+    "ustar_median": 0.76,
+    "rms_rel_pct": 1.153
+   },
+   {
+    "hour": 20,
+    "n": 387,
+    "rms": 0.082,
+    "U90": 5.774,
+    "z0_median": 5.777,
+    "ustar_median": 0.816,
+    "rms_rel_pct": 1.418
+   },
+   {
+    "hour": 21,
+    "n": 400,
+    "rms": 0.093,
+    "U90": 6.29,
+    "z0_median": 7.418,
+    "ustar_median": 0.986,
+    "rms_rel_pct": 1.485
+   },
+   {
+    "hour": 22,
+    "n": 393,
+    "rms": 0.105,
+    "U90": 6.434,
+    "z0_median": 8.464,
+    "ustar_median": 1.08,
+    "rms_rel_pct": 1.631
+   },
+   {
+    "hour": 23,
+    "n": 418,
+    "rms": 0.103,
+    "U90": 6.388,
+    "z0_median": 9.862,
+    "ustar_median": 1.071,
+    "rms_rel_pct": 1.618
+   }
+  ],
+  "cases": {
+   "high wind (U92 9-13 m/s), any hour": {
+    "n_profiles": 451,
+    "applicable": true,
+    "ustar_fit": 0.6205705770891081,
+    "z0_fit": 0.12575941340422606,
+    "z0_used": 0.12575941340422606,
+    "loglaw_fit_rms": 0.036481818214695615,
+    "cfd_vs_measured_rms_fit_66_146": 0.037991376504829824,
+    "cfd_vs_measured_bias_150_450": -0.05391766347507421,
+    "cfd_vs_measured_rms_150_450": 0.11689896091314715,
+    "highest_valid_gate_m": 437.0590515136719,
+    "n_far_gates": 11
+   },
+   "daytime moderate (10-15 UTC, U 4-8)": {
+    "n_profiles": 1401,
+    "applicable": true,
+    "ustar_fit": 0.27939417894825935,
+    "z0_fit": 0.02531344331622305,
+    "z0_used": 0.02531344331622305,
+    "loglaw_fit_rms": 0.013531728968755841,
+    "cfd_vs_measured_rms_fit_66_146": 0.013623928745098808,
+    "cfd_vs_measured_bias_150_450": 0.1106315013727679,
+    "cfd_vs_measured_rms_150_450": 0.17137324624719905,
+    "highest_valid_gate_m": 437.0590515136719,
+    "n_far_gates": 11
+   },
+   "night moderate (22-02 UTC, U 4-8)": {
+    "n_profiles": 1876,
+    "ustar_fit": 1.1969408411360538,
+    "z0_fit": 11.473495668020387,
+    "applicable": false,
+    "note": "log-law fit gives an unphysical roughness; neutral RANS cannot represent this profile (no CFD comparison made)"
+   }
+  }
+ }
+}
